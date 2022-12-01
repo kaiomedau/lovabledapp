@@ -1,0 +1,8 @@
+export const CONFIG = {
+  CONTRACT: "0x8041C98503cc2f35126872E59673ac58457F8579",
+  NETWORK: {
+    NAME: "Polygon",
+    ID: 137,
+  },
+  GAS_LIMIT: 10000000,
+};

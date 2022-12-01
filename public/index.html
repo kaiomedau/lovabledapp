@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <link rel="icon" href="%PUBLIC_URL%/images/logo512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/config/styles.css" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/images/logo512.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lovable Paws Rescue NFT Collection</title>
+    <meta name="description" content="Helping real dogs through the web3" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XLTEWWSQ8Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XLTEWWSQ8Q");
+    </script> -->
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="session">
+      <div class="hero">
+        <div>
+          <img width="200" src="%PUBLIC_URL%/images/lovablepaws.svg" />
+        </div>
+        <h2>NFT Collection</h2>
+        <h3>Connecting people with furry companions.</h3>
+        <div id="dapp-container"></div>
+      </div>
+    </div>
+
+    <div class="session">
+      <div id="faqs" class="content">
+        <h2>FAQ'S</h2>
+
+        <div class="question open">
+          <h5>Why NFTs and web3?</h5>
+          <div class="plus-sign">+</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            convallis nisl non maximus pretium
+          </p>
+          <p>
+            Quisque rutrum bibendum urna, vel egestas eros aliquam eget. Nam
+            fermentum ante quis mi feugiat, eget imperdiet nisi laoreet. Nulla
+            scelerisque erat quis arcu blandit, at finibus libero scelerisque.
+          </p>
+        </div>
+
+        <div class="question open">
+          <h5>How will my donation be used?</h5>
+          <div class="plus-sign">+</div>
+          <p>
+            Morbi imperdiet dapibus tristique. Curabitur lacus sapien, suscipit
+            sit amet sollicitudin at, aliquam sit amet sapien.
+          </p>
+        </div>
+
+        <div class="question open">
+          <h5>Am I adopting a dog by purchasing this NFT?</h5>
+          <div class="plus-sign">+</div>
+          <p>
+            <strong>No</strong>, you will not be adopting a dog when purchasing
+            our NFTs.
+          </p>
+
+          <p>
+            You will be contributing to the monthly costs used to maintain the
+            shelter and care for the animals, such as medication, food and
+            cleaning products.
+          </p>
+
+          <p>
+            For details on how to foster a dog, please visit our website
+            <a href="https://lovablepawsrescue.org" target="_blank"
+              >https://lovablepawsrescue.org</a
+            >
+          </p>
+        </div>
+
+        <div class="question open">
+          <h5>Can I donate directly to the Rescue?</h5>
+          <div class="plus-sign">+</div>
+          <p>
+            <strong>Yes!</strong> check our
+            <a
+              href="https://lovablepawsrescue.networkforgood.com/projects/178691-main-giving-page"
+              target="_blank"
+              >donation page</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="logo">
+        <img width="120" src="%PUBLIC_URL%/images/lovablepaws.svg" />
+      </div>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/lovablepawsrescue/" target="_blank">
+          <img
+            src="%PUBLIC_URL%/images/facebook.svg"
+            alt="Lovable Paws on Facebook"
+          />
+        </a>
+
+        <a href="https://www.instagram.com/lovablepawsrescue/" target="_blank">
+          <img
+            src="%PUBLIC_URL%/images/instagram.svg"
+            alt="Lovable Paws on Instagram"
+          />
+        </a>
+
+        <a href="https://www.tiktok.com/@lovablepawsrescue" target="_blank">
+          <img
+            src="%PUBLIC_URL%/images/tiktok.svg"
+            alt="Lovable Paws on TikTok"
+          />
+        </a>
+      </div>
+      <p>2144 Grays Highway, Ridgeland SC 29936</p>
+
+      <p>843-422-1549</p>
+    </footer>
+    <div>
+      <div id="contract">
+        Lovable Paws Smart Contract
+        <br />
+        <a
+          href="https://polygonscan.com/address/0x8041C98503cc2f35126872E59673ac58457F8579"
+          target="_blank"
+          title="Boo Cup Smart Contract"
+        >
+          0x8041C98503cc2f35126872E59673ac58457F8579
+        </a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var questions = document.getElementsByClassName("question");
+      console.log(questions);
+
+      var openUestions = Array.prototype.filter.call(
+        questions,
+        function (question) {
+          question.classList.toggle("open");
+
+          question.addEventListener("click", function () {
+            question.classList.toggle("open");
+          });
+        }
+      );
+    </script>
+  </body>
+</html>
